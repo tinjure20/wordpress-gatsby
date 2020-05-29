@@ -55,7 +55,8 @@ typings/
 .env*
 
 # env development
-#.env.pruduction
+.env.pruduction
+.env.development
 
 # gatsby files
 .cache/
