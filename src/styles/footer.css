@@ -1,0 +1,26 @@
+/* /src/stles/footer.css */
+.footer-area {
+	background: #f7f7f7; 
+	margin: 0;
+	border-top: 2px solid #c3c3c3;
+  }
+  .footer-text {
+	padding: 1rem;
+	color: #414141;
+	font-size: 80%;
+	text-align: center;
+  }
+	
+	.footer-text a {
+		text-decoration: underline!important;
+    color: rgba(238,0,0,.75)!important; 
+	}
+	
+
+  @media only screen and (min-width: 600px) {
+	 .footer-text {
+	   margin: 0 auto;
+	   max-width: 960px;
+		 font-size: 90%;
+	 }
+  }

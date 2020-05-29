@@ -1,0 +1,118 @@
+/* src/styles/header.css */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background: rebeccapurple;
+  margin-bottom: 1rem;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 65px;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  transition: height 0.3s ease;
+}
+.brand a {
+  align-items: center;
+  color: #FCB826;
+  margin-right: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  text-decoration: none !important;
+  box-shadow: none;
+  margin-top: 0.4rem;
+}
+.header .brand a:focus, .header .brand a:hover {
+  color: #fff;
+}
+.header .brand .text {
+  display: none;
+}
+.header .main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1 1;
+  margin: 0;
+  list-style-type: none;
+}
+.nav-container .main-nav a {
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1rem 0.75rem;
+  margin: 0;
+  color: #FCB826;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: none;
+}
+.header .main-nav a:active, .header .main-nav a:hover {
+  color: white ;
+  text-decoration: underline;
+}
+
+.favicon {
+  height: 23px;
+  width: 23px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 780px) {
+    .header {
+      box-shadow: 1px 2px 18px #333;
+    }
+  
+    .nav-container {
+      height: 65px;
+    }
+    .nav-container .main-nav a.active, .header .main-nav a:hover {
+      color: white;
+      border-bottom: 2px solid #FCB826;
+    }
+    .nav-container .header .main-nav a:active {
+      color: white!important;
+      border-bottom: 2px solid #FCB826!important;
+    }
+    .nav-container {
+      height: 65px;
+      padding: 0 2rem;
+    }
+    .nav-container .brand a {
+      font-size: 1.5rem;
+    }
+    .nav-container .brand .text {
+      display: block;
+    }
+    .nav-container .main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex: unset;
+      height: 100%;
+    }
+    .nav-container .main-nav a {
+      font-size: .9rem;
+      margin: 0 1rem;
+      padding: 1rem 0.2rem;
+      border-bottom: 2px solid transparent;
+      box-shadow: none;
+    }
+    .nav-container .main-nav a.active {
+      color: white;
+    }
+    .brand a {
+      font-weight: 700;
+      font-size: 1.5em;
+    }
+}

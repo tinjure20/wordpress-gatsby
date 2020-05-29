@@ -1,0 +1,42 @@
+/* site */
+.site-main {
+  background-color: whiteSmoke;
+  margin-top: 1.5rem;
+}
+
+.site-content {
+  padding: 3rem 1rem 1rem;
+}
+
+.site-content::not(.entry-title) a:hover {
+  color: #000;
+  text-decoration: underline!important;
+}
+
+.site-content img {
+  display: block;
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .site-main {
+    margin-top: 0;
+  }
+  .site-content {
+    padding: 1em;
+    padding-top: 5rem;
+    font-size: 1.025rem;
+  }
+  .site-content img {
+    display: block;
+    width: inherit;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .site-content {
+      width: 780px;
+      margin: 0 auto;
+  }
+
+}
